@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+
+</head>
+
+<body>
+    <h1 id="text">calculator</h1>
+    <hr>
+
+    <div class="center-custum">
+
+        <form name="button">
+            <input class="output padding center-custum" type="text" id="display">
+            <!-- <div class="output padding center-custum" id="display" disabled></div> -->
+
+        </form>
+    </div>
+    <!-- <form name="button"> -->
+    <div class="calculator center-custum">
+
+        <div class="padding">
+            <button class="button btn-margin" id="btn-7" value="7">7</button>
+            <button class="button btn-margin" id="btn-8" value="8">8</button>
+            <button class="button btn-margin" id="btn-9" value="9">9</button>
+            <!-- <button class="button btn-margin" id="btn-/" value="/">/</button> -->
+            <button class="button1 btn-margin" id="btn-c" value="." onclick="clr()">CLR</button>
+
+        </div>
+
+        <div class="padding">
+
+            <button class="button btn-margin" id="btn-4" value="4">4</button>
+            <button class="button btn-margin" id="btn-5" value="5">5</button>
+            <button class="button btn-margin" id="btn-6" value="6">6</button>
+            <button class="button btn-margin" id="btn-*" value="*">*</button>
+        </div>
+
+        <div class="padding">
+            <button class="button btn-margin" id="btn-1" value="1">1</button>
+            <button class="button btn-margin" id="btn-2" value="2">2</button>
+            <button class="button btn-margin" id="btn-3" value="3">3</button>
+            <button class="button btn-margin" id="btn-" value="-">-</button>
+
+        </div>
+
+        <div class="padding">
+
+            <button class="button1 btn-margin" id="btn-=" value="=" onclick="myfunction()">=</button>
+            <button class="button btn-margin" id="btn-0" value="0">0</button>
+            <!-- <button class="button1 btn-margin" id="btn-c" value="." onclick="clr()">CLR</button> -->
+            <button class="button btn-margin" id="btn-/" value="/">/</button>
+            <button class="button btn-margin" id="btn-+" value="+">+</button>
+        </div>
+    </div>
+
+    <!-- </form> -->
+    <div id="update"></div>
+    <script src="./js/app.js"></script>
+</body>
+
+</html>
